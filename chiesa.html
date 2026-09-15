@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La chiesa | Pian del Falco</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="immagini/logo.png" alt="Pian del Falco"></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Apri il menu"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-menu" aria-label="Navigazione principale">
+      <details class="nav-dropdown">
+        <summary>La storia di Pian del Falco <span aria-hidden="true">⌄</span></summary>
+        <div class="submenu">
+          <a href="storia.html">La storia di Pian del Falco</a>
+          <a href="piste.html">Le piste da sci</a>
+          <a href="chiesa.html" aria-current="page">La chiesa</a>
+          <a href="strade.html">Le strade</a>
+        </div>
+      </details>
+      <a href="index.html#cosa-fare">Cosa fare a Pian del Falco</a>
+      <a href="archivio_fotografico.html">Archivio fotografico</a>
+      <a href="info.html">Informazioni riguardo questo sito</a>
+    </nav>
+  </header>
+  <main><section class="page-heading section-wrap" aria-labelledby="page-title"><div class="section-label">04 / Da scoprire</div><h1 id="page-title">La chiesa</h1><p>Contenuti in preparazione.</p></section></main>
+  <footer class="site-footer"><span>Pian del Falco</span><span>Sestola, Modena</span></footer>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainMenu = document.querySelector('.main-nav');
+    menuToggle.addEventListener('click', () => {
+      const isOpen = mainMenu.classList.toggle('menu-open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+      menuToggle.setAttribute('aria-label', isOpen ? 'Chiudi il menu' : 'Apri il menu');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Informazioni, fonti e metodo di ricerca del sito Pian del Falco.it.">
+  <title>Informazioni riguardo questo sito | Pian del Falco.it</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Torna alla home di Pian del Falco">
+      <img src="immagini/logo.png" alt="Pian del Falco">
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Apri il menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-menu" aria-label="Navigazione principale">
+      <details class="nav-dropdown">
+        <summary>La storia di Pian del Falco <span aria-hidden="true">⌄</span></summary>
+        <div class="submenu">
+          <a href="storia.html">La storia di Pian del Falco</a>
+          <a href="piste.html">Le piste da sci</a>
+          <a href="chiesa.html">La chiesa</a>
+          <a href="strutture_ricettive.html">Le strutture ricettive</a>
+        </div>
+      </details>
+      <a href="index.html#cosa-fare">Cosa fare a Pian del Falco</a>
+      <a href="archivio_fotografico.html">Archivio fotografico</a>
+      <a href="info.html" aria-current="page">Informazioni riguardo questo sito</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-heading section-wrap" aria-labelledby="page-title">
+      <div class="section-label">05 / Il progetto</div>
+      <h1 id="page-title">Informazioni<br>riguardo questo sito</h1>
+      <p>Una raccolta nata dalla passione, dalla ricerca e dal desiderio di raccontare Pian del Falco.</p>
+    </section>
+
+    <article class="article-content section-wrap">
+      <h2>Quello che trovi in questo sito è frutto della passione e della ricerca</h2>
+      <p>piandelfalco.it è il risultato di un’attenta selezione di informazioni raccolte con dedizione nel corso degli anni, frutto sia di esperienze personali sul campo sia dello studio approfondito di libri e di articoli disponibili online.</p>
+      <p>Purtroppo non esistono molte informazioni reperibili sulla storia del villaggio di Pian del Falco e molte sono frammentarie. Per questo ho deciso di raccogliere in un unico posto, cercando di arricchirle con informazioni fresche, fotografie e idee.</p>
+
+      <h2>Le fonti</h2>
+      <p>Non avrei comunque mai potuto iniziare questo lavoro se non fosse stato per alcune fonti che ho reperito sul web, che devo assolutamente citare per onestà intellettuale:</p>
+      <ul class="source-list">
+        <li>L’associazione Culturale E’ Scamàdul, in particolare la <a href="https://escamadul.it/2022/02/pian-del-falco/" target="_blank" rel="noopener noreferrer">pagina dedicata a Pian del Falco</a> del 16 febbraio 2022</li>
+        <li>Il sito ufficiale di informazione Turistica dell’Appennino Modenese, che ha una <a href="https://www.inappenninomodenese.com/localita/sestola/pian-del-falco/pagina dedicata" target="_blank" rel="noopener noreferrer">pagina dedicata</a> con alcune informazioni storiche e turistiche</li>
+        <li>Il sito “Intorno al Monte Cimone” che è <a href="https://intornoalmontecimone.altervista.org/pian-del-falco-sestola/" target="_blank" rel="noopener noreferrer">ricco di informazioni e fotografie</a> dedicate a questa località</li>
+      </ul>
+
+      <p>Nello scrivere la pagine di questo sito ho sempre cercato di rielaborare i contenuti raccolti e, ove possibile, arricchire i testi con informazioni puntuali. Qualora non ci sia riuscito efficacemente, spero che mi perdonerete!</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <span>Pian del Falco</span>
+    <span>Sestola, Modena</span>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainMenu = document.querySelector('.main-nav');
+    menuToggle.addEventListener('click', () => {
+      const isOpen = mainMenu.classList.toggle('menu-open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+      menuToggle.setAttribute('aria-label', isOpen ? 'Chiudi il menu' : 'Apri il menu');
+    });
+  </script>
+</body>
+</html>
