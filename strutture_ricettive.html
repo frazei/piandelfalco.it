@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Le strutture ricettive | Pian del Falco</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><img src="immagini/logo.png" alt="Pian del Falco"></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Apri il menu"><span></span><span></span><span></span></button>
+    <a class="brand" href="index.html">
+      <img src="immagini/logo.png" alt="Pian del Falco"></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Apri il menu">
+      <span></span><span></span><span></span>
+    </button>
+
     <nav class="main-nav" id="main-menu" aria-label="Navigazione principale">
       <details class="nav-dropdown">
         <summary>La storia di Pian del Falco <span aria-hidden="true">⌄</span></summary>
@@ -25,7 +31,42 @@
       <a href="info.html">Informazioni riguardo questo sito</a>
     </nav>
   </header>
-  <main><section class="page-heading section-wrap" aria-labelledby="page-title"><div class="section-label">02 / Da conoscere</div><h1 id="page-title">Le strutture ricettive</h1><p>Contenuti in preparazione.</p></section></main>
+  <main>
+    <section class="archive-hero" aria-labelledby="page-title">
+      <img src="immagini/hero-images/strutture_ricettive.jpg" alt="L'alberto ristorante Due Scoiattoli">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="archive-hero-content">
+        <p class="eyebrow">02 / Da conoscere</p>
+        <h1 id="page-title">Le strutture ricettive</h1>
+      </div>
+    </section>
+
+    <article class="article-content section-wrap">
+      <h2>La Baita del Sole</h2>
+      <p>Come già accennato nella sezione dedicata alla storia di Pian del Falco, le prime strutture ricettive edificate furono il <b>Rifugio Pian del Falco</b> (conosciuto anche come "Lo Chalet") e la <b>Baita del Sole</b>.
+      <figure class="history-image">
+        <img src="immagini/hero-images/la_storia.jpg" alt="Il Rifugio e la Baita del Sole con le scritte rosse">
+        <figcaption>Il Rifugio e la Baita del Sole con le scritte rosse</figcaption>
+      </figure>
+      </p>
+       
+      <p>Osservando le varie foto d'epoca è divertente notare una certa evoluzione nel tempo che hanno avuto questi due fabbricati: in un primo tempo lo Chalet si presenta come un unico fabbricato, inizialmente senza scritte e poi successivamente con la comparsa della scritta "Rifugio Pian del Falco" sul fronte del fabbricato. Poi venne costruito il fabbricato della Baita del Sole e su entrambi si possono osservare due scritte di colore rosso, una sulla Baita del Sole e l'altra sullo Chalet che riporta la dicitura "Rifugio Pian del Falco - RISTORANTE - BAR - DANCING".</p>
+      <figure class="history-image">
+        <img src="immagini/baita_del_sole2.jpg" alt="Il Rifugio e la Baita del Sole con le insegne in rilievo">
+        <figcaption>Il Rifugio e la Baita del Sole con le insegne in rilievo</figcaption>
+      </figure>
+      <p>L'ultimo aspetto, quello che si trova più raramente nelle cartoline è stato probabilmente l'ultimo prima della demolizione, vede i due edifici identificati da insegne in rilievo.</p>
+        
+      <p>Sia lo Chalet che la Baita del Sole sono stati abbattuti per fare spazio a due nuovi fabbricati ad uso residenziale.</p>
+
+      <h2>Il rifugio Calvanella</h2>
+      <p>Work in progress...</p>
+
+      <h2>L'albergo ristorante Due Scoiattoli</h2>
+      <p>Work in progress...</p>
+    </article>
+
+  </main>
   <footer class="site-footer"><span>Pian del Falco</span><span>Sestola, Modena</span></footer>
   <script>
     const menuToggle = document.querySelector('.menu-toggle');
@@ -37,4 +78,5 @@
     });
   </script>
 </body>
+
 </html>
