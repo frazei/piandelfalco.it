@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosa fare a Pian del Falco | Pian del Falco</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="immagini/logo.png" alt="Pian del Falco"></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Apri il menu"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-menu" aria-label="Navigazione principale">
+      <details class="nav-dropdown">
+        <summary>La storia di Pian del Falco <span aria-hidden="true">⌄</span></summary>
+        <div class="submenu">
+          <a href="storia.html">La storia di Pian del Falco</a>
+          <a href="piste.html">Le piste da sci</a>
+          <a href="chiesa.html">L'oratorio della Santa Croce</a>
+          <a href="strutture_ricettive.html">Le strutture ricettive</a>
+        </div>
+      </details>
+      <a href="cosa_fare.html" aria-current="page">Cosa fare a Pian del Falco</a>
+      <a href="archivio_fotografico.html">Archivio fotografico</a>
+      <a href="info.html">Informazioni riguardo questo sito</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="archive-hero" aria-labelledby="page-title">
+      <img src="immagini/hero-images/cosa_fare.jpg" alt="Cosa fare a Pian del Falco">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="archive-hero-content">
+        <p class="eyebrow">02 / Da conoscere</p>
+        <h1 id="page-title">Cosa fare a Pian del Falco</h1>
+        <p>Scopri le attività e le proposte culturali della comunità di Pian del Falco.</p>
+      </div>
+    </section>
+
+    <article class="article-content section-wrap piste-page-content">
+      <p>Pian del Falco offre numerose opportunità per gli amanti della natura, dello sport e del divertimento. In questa sezione potrai scoprire le attività che è possibile fare in questa località montana sia d'estate che durante l'inverno.</p>
+      <h2>Attività invernali</h2>
+      <p>In inverno, grazie alla vicinanza con il Monte Cimone e le località sciistiche di Passo del Lupo, del Cimoncino e delle Polle è possibile praticare <b>sport invernali come lo sci alpino, lo snowboard e le ciaspolate.</b> Inoltre, la zona offre anche una <b>pista dedicata per lo slittino</b> che si trova a Passo del Lupo e diverse aree giochi dedicate ai bambini: al Lago della Ninfa, alle Polle e al Cimoncino. Il comprensorio del Monte Cimone infatti è costituito da tre diverse località sciistiche tra di loro collegate dagli impianti.</p>
+      <p>Pian del Falco in inverno è una tappa obbligatoria per tutti coloro che parcheggiano a Sestola l'auto poichè l'unico collegamento disponibile con Passo del Lupo è attraverso la seggiovia Sestola - Pian del Falco e poi successivamente con <b>la navetta che parte dal parcheggio del condominio Due Scoiattoli.</b></p>
+      
+      <h2>Attività estive</h2>
+      <p>Durante l'estate, Pian del Falco è un ottimo punto di partenza per gli amanti della natura e delle attività all'aria aperta. È possibile fare <b>escursioni a piedi o in mountain bike</b> lungo i sentieri che attraversano i boschi e le montagne circostanti, rimanendo sempre in quota. Inoltre è presente un <b>circuito per biciclette downhill</b> che scorre lungo quelli che una volta erano i percorsi delle piste da sci e la vecchia strada carrabile, ora chiusa al traffico, servito dalla seggiovia che parte da Sestola.</p>
+      <p>Da Pian del Falco è possibile raggiungere facilmente sia in auto che a piedi o in bicicletta il Lago della Ninfa (passando per il rifugio Cervarola) che in estate diventa la sede di un <b>parco giochi per bambini</b> con attrazioni adrenaliniche come il funbob e i percorsi di albering.</p>
+
+      <h2>Eventi e manifestazioni</h2>
+      <p>Ci sono molti siti web dedicati al comprensorio del Monte Cimone ed alle località di Sestola e Fanano che possono essere utili per informazioni aggiornate sulle attività e gli eventi, ecco un elenco dei principali:
+        <ul>
+          <li>Il sito ufficiale del <a href="https://www.cimonesci.it/" target="_blank" rel="noopener noreferrer">Consorzio Stazione invernale del Cimone</a> contiene informazioni utili ed itinerari per vivere il Cimone sia in estate che in inverno.</li>
+          <li>Il sito ufficiale di <a href="https://www.inappenninomodenese.com/itinerari/l-sestola/" target="_blank" rel="noopener noreferrer">Informazione Turistica dell'Appennino Modenese</a> dispone di una sezione dedicata ai sentieri che attraversano la zona.</li>
+          <li>Il <a href="https://visitsestola.com/" target="_blank" rel="noopener noreferrer">Portale turistico di Sestola</a> offre un elenco sempre aggiornato delle attività e degli eventi.</li>
+        </ul>
+      </p>
+      <p>
+        Grazie alla propria posizione strategica, rispetto sia a Sestola che a Fanano, Pian del Falco beneficia di un ricco calendario di eventi che si svolgono soprattutto nella stagione estiva nell frazioni limitrofe.
+      </p>
+
+      <h2>Ristorazione e strutture ricettive</h2>
+      <p>Per quanto riguarda la ristorazione, Pian del Falco dispone di un ristorante, il <b>Rifugio Calvanella</b>, che offre piatti tipici della cucina montana/emiliana sia in estate che in inverno. Inoltre, solo nel periodo estivo, è possibile fermarsi presso la terrazza sopra al negozio Protti Sport che offre piatti veloci e panini e che durante il weekend organizza anche serate musicali e di intrattenimento.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer"><span>Pian del Falco</span><span>Sestola, Modena</span></footer>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainMenu = document.querySelector('.main-nav');
+    menuToggle.addEventListener('click', () => {
+      const isOpen = mainMenu.classList.toggle('menu-open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+      menuToggle.setAttribute('aria-label', isOpen ? 'Chiudi il menu' : 'Apri il menu');
+    });
+  </script>
+</body>
+</html>
